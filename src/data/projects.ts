@@ -35,35 +35,6 @@ export const personalProjects: Project[] = [
             { label: "Code", href: "https://github.com/RUSK-0211/overseas-training-site-24010011" },
         ],
     },
-    {
-        id: "a",
-        thumb: "",
-        thumbImage: "",
-        name: "a",
-        desc: "a",
-        tags: ["Node.js", "CLI"],
-        techStack: ["Node.js", "TypeScript"],
-        role: "Full Stack Developer",
-        period: "0",
-        teamSize: 1,
-        links: [{ label: "Code", href: "#" }],
-    },
-    {
-        id: "b",
-        thumb: "",
-        thumbImage: "",
-        name: "b",
-        desc: "b",
-        tags: ["TypeScript", "Color Science"],
-        techStack: ["TypeScript", "Color Science"],
-        role: "Frontend Developer",
-        period: "0",
-        teamSize: 1,
-        links: [
-            { label: "Live", href: "#" },
-            { label: "Code", href: "#" },
-        ],
-    },
 ]
 
 export const collaborativeProjects: Project[] = [
