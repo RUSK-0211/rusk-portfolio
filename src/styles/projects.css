@@ -1,0 +1,316 @@
+/* ===========================
+    Projects View
+=========================== */
+
+.projects-header {
+    padding: 64px 0 32px;
+    border-bottom: 1px solid var(--line);
+}
+
+.projects-back {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-soft);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 26px;
+}
+
+.projects-title {
+    font-family: var(--mono);
+    font-size: clamp(28px, 5vw, 40px);
+    margin: 0 0 12px;
+    font-weight: 800;
+}
+
+.projects-desc {
+    color: var(--ink-soft);
+    font-size: 14px;
+    max-width: 520px;
+    line-height: 1.7;
+    margin: 0;
+    font-family: var(--mono);
+}
+
+/* ===========================
+    Directory Section
+=========================== */
+
+.dir-section {
+    padding: 56px 0;
+}
+
+.dir-section-bordered {
+    border-bottom: 1px solid var(--line);
+}
+
+.dir-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--mono);
+    font-size: 18px;
+    color: var(--amber);
+    margin-bottom: 8px;
+}
+
+.dir-label-arrow {
+    color: var(--ink-faint);
+}
+
+.dir-desc {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin: 0 0 28px;
+    font-family: var(--mono);
+}
+
+.dir-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* ===========================
+    Project Card
+=========================== */
+
+.project-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 22px 26px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    border-radius: var(--radius);
+    overflow: hidden;
+    font-family: var(--sans);
+    color: var(--ink);
+    transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.project-card:hover {
+    border-color: var(--dir-accent-soft);
+    transform: translateY(-2px);
+}
+
+.dir-warm {
+    --dir-accent: var(--accent-warm);
+    --dir-accent-soft: var(--accent-warm-soft);
+}
+
+/* Thumbnail */
+.project-card--banner {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+}
+
+.project-card--banner .project-card-body {
+    padding: 22px 26px;
+}
+
+.project-card-thumb {
+    position: relative;
+    flex-shrink: 0;
+    width: 70px;
+    height: 56px;
+    border-radius: 14px;
+    background: var(--accent-warm);
+    color: var(--surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 6px;
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.project-card-thumb::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0) 55%);
+    pointer-events: none;
+}
+
+/* Image Thumbnail */
+.project-card-thumb--image {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 8px;
+}
+
+.project-card-thumb--image::after {
+    content: none;
+}
+
+.project-card-thumb-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* banner */
+.project-card--banner .project-card-thumb {
+    width: 100%;
+    height: 200px;
+    border-radius: 0;
+    padding: 0;
+}
+
+.project-card--banner .project-card-thumb::after {
+    content: none;
+}
+
+.project-card--banner .project-card-thumb--image {
+    border: none;
+    padding: 0;
+}
+
+.project-card--banner .project-card-thumb-img {
+    object-fit: cover;
+}
+
+/* banner: 画像がまだ無い場合のプレースホルダー */
+.project-card--banner .project-card-thumb:not(.project-card-thumb--image) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: repeating-linear-gradient(135deg,
+            var(--surface-2),
+            var(--surface-2) 8px,
+            var(--bg-soft) 8px,
+            var(--bg-soft) 16px);
+    color: var(--ink-faint);
+    font-size: 13px;
+    letter-spacing: 0.08em;
+}
+
+/* Body */
+.project-card-body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.project-card-title {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+}
+
+.project-card-desc {
+    margin: 0;
+    font-size: 14.5px;
+    color: var(--ink);
+    line-height: 1.85;
+    max-width: 640px;
+}
+
+.project-card-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+    color: var(--ink-soft);
+}
+
+.project-card-meta strong {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 11px;
+    color: var(--ink-faint);
+    letter-spacing: 0.02em;
+    margin-right: 6px;
+}
+
+/* Tags */
+.project-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.project-card-tag {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--ink-soft);
+    background: var(--surface-2);
+    padding: 3px 8px;
+    border-radius: 20px;
+}
+
+.project-card-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-faint);
+}
+
+.project-card-tech-item {
+    position: relative;
+    padding-right: 12px;
+}
+
+.project-card-tech-item:not(:last-child)::after {
+    content: "/";
+    position: absolute;
+    right: 0;
+    color: var(--line);
+}
+
+/* Links */
+.project-card-links {
+    display: flex;
+    gap: 16px;
+    font-family: var(--mono);
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+.project-card-link {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.project-card-link:hover {
+    text-decoration: underline;
+}
+
+/* responsive */
+@media(max-width: 480px) {
+    .project-card {
+        padding: 18px 20px;
+        gap: 12px;
+    }
+
+    .project-card-thumb {
+        width: 46px;
+        height: 46px;
+        font-size: 8px;
+    }
+
+    .project-card--banner .project-card-thumb {
+        width: 100%;
+        height: 140px;
+    }
+
+    .project-card--banner.project-card-body {
+        padding: 18px 20px;
+    }
+}
