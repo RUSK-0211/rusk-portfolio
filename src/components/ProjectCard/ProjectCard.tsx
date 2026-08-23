@@ -3,6 +3,7 @@ import type { Project } from "@/types"
 export default function ProjectCard({
     thumb,
     thumbImage,
+    thumbVariant = "icon",
     name,
     desc,
     tags,
@@ -12,19 +13,26 @@ export default function ProjectCard({
     teamSize,
     links,
 }: Project) {
+    const isBanner = thumbVariant === "banner"
+
+    const cardClassName = isBanner
+        ? "project-card project-card--banner"
+        : "project-card"
+
+    const thumbClassName = [
+        "project-card-thumb",
+        thumbImage && "project-card-thumb--image",
+    ]
+        .filter(Boolean)
+        .join(" ")
+
     return (
-        <div className="project-card">
-            <div
-                className={
-                    thumbImage
-                        ? "project-card-thumb project-card-thumb--image"
-                        : "project-card-thumb"
-                }
-            >
+        <div className={cardClassName}>
+            <div className={thumbClassName}>
                 {thumbImage ? (
                     <img
                         src={thumbImage}
-                        alt={`${name} のロゴ`}
+                        alt={`${name} のサムネイル`}
                         className="project-card-thumb-img"
                     />
                 ) : (

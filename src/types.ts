@@ -42,6 +42,7 @@ export type Project = {
     id: string
     thumb: string
     thumbImage: "/logos/saas-dashboard-logo.png"
+    thumbVariant?: "icon" | "banner"
     name: string
     desc: string
     tags: string[]
