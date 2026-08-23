@@ -14,15 +14,12 @@ export const personalProjects: Project[] = [
         role: "Frontend / UI設計",
         period: "2026年 約3週間",
         teamSize: 1,
-        links: [
-            { label: "Live", href: "#" },
-            { label: "Code", href: "#" },
-        ],
+        links: [{ label: "Code", href: "https://github.com/RUSK-0211/rusk-portfolio" }],
     },
     {
         id: "overseas-training-site",
         thumb: "OVERSEAS",
-        thumbImage: "",
+        thumbImage: "Overseas_thumb.png",
         name: "Overseas Training Site",
         desc: "海外研修で訪れた施設や観光地、学びを紹介するWebサイト。報告会で使用するため、短期間で必要な情報を整理し、シンプルで見やすい構成で制作しました。",
         tags: ["HTML", "CSS", "JavaScript"],
@@ -67,7 +64,7 @@ export const collaborativeProjects: Project[] = [
     {
         id: "fe-speed-quiz",
         thumb: "QUIZ",
-        thumbImage: "",
+        thumbImage: "FE_Speed_Quiz_thumb.png",
         name: "FE Speed Quiz",
         desc: "基本情報技術者試験の学習効率を高めるために制作した早押しクイズアプリ。一問一答形式でテンポよく問題を解けるよう設計し、短時間で繰り返し学習できることを重視しました。",
         tags: ["HTML", "CSS", "JavaScript"],
