@@ -1,0 +1,55 @@
+:root {
+  /* Monotone Color */
+  --bg: #eae9e5;
+  --bg-soft: #e2e1dc;
+  --surface: #f6f5f2;
+  --surface-2: #dedcd6;
+
+  --line: #cdccc5;
+  --line-soft: #dad9d3;
+
+  --ink: #2a2a27;
+  --ink-soft: #6d6c66;
+  --ink-faint: #9a9990;
+
+  --accent: #5c6d68;
+  --accent-soft: #8a9c95;
+
+  /* teal */
+  --accent: #5c6d68;
+  --accent-soft: #8a9c95;
+  --accent-line: #b7c4be;
+
+  /* amber */
+  --accent-warm: #a5695a;
+  --accent-warm-soft: #c79a8d;
+  --amber: #96743a;
+  --amber-soft: #b8955c;
+  --amber-line: #d4bc96;
+
+  /* Font */
+  --mono: 'JetBrains Mono', 'Courier New', monospace;
+  --sans: 'Meiryo', 'Noto Sans JP', sans-serif;
+
+  /* Radius */
+  --radius: 3px;
+
+  /* Animation */
+  --transition-fast: .2s ease;
+  --transition: .3s ease;
+
+  /* Button */
+  --btn-bg: var(--ink);
+  --btn-text: var(--surface);
+  --btn-border: var(--ink);
+
+  --btn-hover-bg: var(--surface);
+  --btn-hover-text: var(--ink);
+
+  /* Shadow */
+  --shadow-sm: 0 4px 12px rgba(0,0,0,.08);
+
+  /* Card */
+  --dir-accent: var(--accent);
+  --dir-accent-soft: var(--accent-soft);
+}
