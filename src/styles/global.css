@@ -765,8 +765,8 @@ button:focus-visible {
       var(--surface-2),
       var(--surface-2) 8px,
       var(--bg-soft) 8px,
-      var(--bg - soft) 16px);
-  color: var(--ink - faint);
+      var(--bg-soft) 16px);
+  color: var(--ink-faint);
   font-size: 13px;
   letter-spacing: 0.08em;
 }
