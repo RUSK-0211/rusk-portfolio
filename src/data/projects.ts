@@ -1,6 +1,6 @@
 import type { Project } from "@/types"
 import PortfolioIcon from "@/assets/images/portfolio_icon.png"
-import OverseasThumb from "@/assets/images/Overseas_thumb.png"
+import OverseasThumb from "@/assets/images/Overseas_thumb.jpg"
 import LiveFxImage from "@/assets/images/LiveFx_thumb.png"
 import QuizThumb from "@/assets/images/FE_Speed_Quiz_thumb.png"
 
