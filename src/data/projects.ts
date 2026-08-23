@@ -1,12 +1,15 @@
 import type { Project } from "@/types"
-import LiveFxLogo from "@/assets/images/LiveFxLogoSvg.svg"
 import PortfolioIcon from "@/assets/images/portfolio_icon.png"
+import OverseasThumb from "@/assets/images/Overseas_thumb.png"
+import LiveFxImage from "@/assets/images/LiveFxthumb.png"
+import QuizThumb from "@/assets/images/FE_Speed_Quiz_thumb.png"
 
 export const personalProjects: Project[] = [
     {
         id: "portfolio-website",
         thumb: "PORTFOLIO",
         thumbImage: PortfolioIcon,
+        thumbVariant: "icon",
         name: "Portfolio Website",
         desc: "React + TypeScript + Vite で構築した個人ポートフォリオサイト。",
         tags: ["React", "TypeScript", "Vite"],
@@ -19,7 +22,8 @@ export const personalProjects: Project[] = [
     {
         id: "overseas-training-site",
         thumb: "OVERSEAS",
-        thumbImage: "Overseas_thumb.png",
+        thumbImage: OverseasThumb,
+        thumbVariant: "banner",
         name: "Overseas Training Site",
         desc: "海外研修で訪れた施設や観光地、学びを紹介するWebサイト。報告会で使用するため、短期間で必要な情報を整理し、シンプルで見やすい構成で制作しました。",
         tags: ["HTML", "CSS", "JavaScript"],
@@ -38,7 +42,8 @@ export const collaborativeProjects: Project[] = [
     {
         id: "livefx",
         thumb: "LiveFx",
-        thumbImage: LiveFxLogo,
+        thumbImage: LiveFxImage,
+        thumbVariant: "banner",
         name: "LiveFx",
         desc: "ライブパフォーマンス向けの双方向インタラクティブシステムです。入学式で約3000人が同時接続する双方向ライブ演出システムを実現しました。スマートフォンとコントロールPCを連携させ、リアルタイムで視覚効果を配信する仕組みを構築。私はフロントエンド担当として、React + TypeScript を用いたUI実装を担当しました。",
         tags: ["React", "TypeScript", "Vite", "WebSocket", "Socket.IO"],
@@ -51,7 +56,7 @@ export const collaborativeProjects: Project[] = [
     {
         id: "shift-app",
         thumb: "SHIFT",
-        thumbImage: "",
+        thumbVariant: "icon",
         name: "保育園シフト希望管理システム",
         desc: "保育園職員の出勤希望・休暇申請を効率的に管理するための Google Apps Script ベースの Web アプリ。園長・職員へのヒアリングをもとに要件を整理し、希望ログ、カレンダー生成、認証、管理メニューなどの機能を設計。PMとして約1年間、9名チームの進行管理を担当しました。",
         tags: ["Google Apps Script", "JavaScript", "HTML", "CSS", "clasp"],
@@ -64,7 +69,8 @@ export const collaborativeProjects: Project[] = [
     {
         id: "fe-speed-quiz",
         thumb: "QUIZ",
-        thumbImage: "FE_Speed_Quiz_thumb.png",
+        thumbImage: QuizThumb,
+        thumbVariant: "banner",
         name: "FE Speed Quiz",
         desc: "基本情報技術者試験の学習効率を高めるために制作した早押しクイズアプリ。一問一答形式でテンポよく問題を解けるよう設計し、短時間で繰り返し学習できることを重視しました。",
         tags: ["HTML", "CSS", "JavaScript"],

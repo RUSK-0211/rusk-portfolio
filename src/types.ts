@@ -41,7 +41,7 @@ export type ProjectLink = {
 export type Project = {
     id: string
     thumb: string
-    thumbImage: "/logos/saas-dashboard-logo.png"
+    thumbImage?: string
     thumbVariant?: "icon" | "banner"
     name: string
     desc: string
