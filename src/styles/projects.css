@@ -220,6 +220,27 @@
     max-width: 640px;
 }
 
+.project-section {
+    margin-bottom: 28px;
+}
+
+.project-section-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+}
+
+.project-section-body {
+    margin: 0;
+    font-size: 14.5px;
+    color: var(--ink);
+    line-height: 1.85;
+    max-width: 640px;
+    white-space: pre-line; /* 改行を自然に反映 */
+}
+
 .project-card-meta {
     display: flex;
     flex-direction: column;
