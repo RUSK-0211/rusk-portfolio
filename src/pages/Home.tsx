@@ -35,8 +35,10 @@ export default function HomeView({ typedText, nav }: { typedText: string; nav: N
                 </div>
 
                 <p className="hero-description">
-                    アイデアを形にする過程が好きで、PMとフロントエンドの両方に取り組んでいます。
-                    個人制作とチーム開発、それぞれの経験を活かしてプロダクトづくりをしています。
+                    私は「ユーザーにとって価値のあるプロダクトを届けること」を軸に、プロジェクトマネジメントとフロントエンドの両面から、ものづくりについて学んでいます。
+                </p>
+                <p className="hero-description">
+                    アイデアを形にしていく過程が好きで、技術だけでなく企画や設計、進め方まで含めてプロダクトを考えることを大切にしています。
                 </p>
 
                 <div className="hero-buttons">
