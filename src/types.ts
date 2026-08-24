@@ -16,7 +16,7 @@ export type SkillCategory = {
 export type Certification = {
     seal: string;
     name: string;
-    issuer: string; 
+    issuer: string;
     date: string;
     category: string;
     status: "passed" | "failed" | "pending";
@@ -45,6 +45,7 @@ export type Project = {
     thumbVariant?: "icon" | "banner"
     name: string
     desc: string
+    content: string
     tags: string[]
     techStack: string[]
     role: string

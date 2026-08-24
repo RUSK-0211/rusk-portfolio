@@ -6,6 +6,7 @@ export default function ProjectCard({
     thumbVariant = "icon",
     name,
     desc,
+    content,
     tags,
     techStack,
     role,
@@ -42,7 +43,22 @@ export default function ProjectCard({
             <div className="project-card-body">
                 <div className="project-card-title">{name}</div>
 
-                <p className="project-card-desc">{desc}</p>
+                {/* 概要 */}
+                {desc && (
+                    <div className="project-section">
+                        <h4 className="project-section-title">概要</h4>
+                        <p className="project-section-body">{desc}</p>
+                    </div>
+                )}
+
+                {/* 詳細 */}
+                {content && (
+                    <div className="project-section">
+                        <h4 className="project-section-title">役割・工夫</h4>
+                        <p className="project-section-body">{content}</p>
+                    </div>
+                )}
+
 
                 <div className="project-card-meta">
                     <div><strong>役割:</strong> {role}</div>
