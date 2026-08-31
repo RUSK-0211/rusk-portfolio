@@ -238,7 +238,13 @@
     color: var(--ink);
     line-height: 1.85;
     max-width: 640px;
-    white-space: pre-line; /* 改行を自然に反映 */
+}
+
+.project-section-body p {
+    margin: 0 0 10px;
+}
+.project-section-body p:last-child {
+    margin-bottom: 0;
 }
 
 .project-card-meta {
