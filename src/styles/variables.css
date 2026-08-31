@@ -12,9 +12,6 @@
   --ink-soft: #6d6c66;
   --ink-faint: #9a9990;
 
-  --accent: #5c6d68;
-  --accent-soft: #8a9c95;
-
   /* teal */
   --accent: #5c6d68;
   --accent-soft: #8a9c95;
@@ -23,6 +20,7 @@
   /* amber */
   --accent-warm: #a5695a;
   --accent-warm-soft: #c79a8d;
+  --accent-amber: #5A4522;
   --amber: #96743a;
   --amber-soft: #b8955c;
   --amber-line: #d4bc96;
