@@ -125,7 +125,7 @@ export default function HomeView({ typedText, nav }: { typedText: string; nav: N
             </section>
 
             <footer className="footer">
-                <span>© 2026 Rino Kudo</span>
+                <span>© 2026 Rino Kudo — Last Updated: 2026-09-14</span>
                 <span>crafted with React & TypeScript</span>
             </footer>
         </Shell>
