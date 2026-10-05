@@ -1,6 +1,7 @@
 import type { Project } from "@/types"
 import PortfolioIcon from "@/assets/images/portfolio_icon.png"
 import OverseasThumb from "@/assets/images/Overseas_thumb.png"
+import DroneImage from "@/assets/images/Drone_thumb.jpg"
 import LiveFxImage from "@/assets/images/LiveFx_thumb.jpg"
 import QuizThumb from "@/assets/images/FE_Speed_Quiz_thumb.png"
 
@@ -41,6 +42,24 @@ export const personalProjects: Project[] = [
 ]
 
 export const collaborativeProjects: Project[] = [
+    {
+        id: "drone",
+        thumb: "DRONE",
+        thumbImage: DroneImage,
+        thumbVariant: "banner",
+        name: "ドロカツ",
+        desc: "ドローン「CoDrone EDU」を使用し、プログラミング技術と操縦技術を競う大会にチーム「ARMY」として出場しました。東日本大会を勝ち抜き、第2回全国大会にも出場しました。",
+        content: "4人チームのうち、1名が操縦担当、私を含む3名がプログラミング担当として参加しました。学年・学科が異なるメンバーで構成されたチームだったため、情報共有や役割分担を工夫し、チームで円滑に開発を進められるよう取り組みました。",
+        tags: ["Python"],
+        techStack: ["Python"],
+        role: "Programmer / Backend",
+        period: "2024.11 - 2025.03（約4ヶ月間）",
+        teamSize: 4,
+        links: [
+            { label: "Link", href: "https://www.drokatsu.com/" },
+            { label: "YouTube", href: "https://youtu.be/JGNaSYs9ybo?si=XtfOqpVRbPrFQTY2" }
+        ],
+    },
     {
         id: "livefx",
         thumb: "LiveFx",
