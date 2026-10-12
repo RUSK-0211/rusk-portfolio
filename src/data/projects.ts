@@ -39,6 +39,23 @@ export const personalProjects: Project[] = [
             { label: "Code", href: "https://github.com/RUSK-0211/overseas-training-site-24010011" },
         ],
     },
+    {
+        id: "python-othello",
+        thumb: "OTHELLO",
+        thumbVariant: "icon",
+        name: "Python Othello",
+        desc: "1年次に制作したPythonのオセロゲームを、現在の知識を活かしてリファクタリングした作品です。",
+        content: "制作当時の講評を振り返り、盤面表示や操作性を改善するとともに、機能ごとにモジュールを整理しました。また、効果音をゲーム内のイベントに合わせて再設計し、より遊びやすいゲームを目指しました。",
+        tags: ["Python", "Refactoring", "CLI"],
+        techStack: ["Python", "pygame", "HTML / CSS", "Git / GitHub"],
+        role: "設計 / 実装 / UI改善",
+        period: "2026年 約1週間",
+        teamSize: 1,
+        links: [
+            { label: "Code", href: "https://github.com/RUSK-0211/OthelloGame" }
+        ],
+    }
+
 ]
 
 export const collaborativeProjects: Project[] = [
