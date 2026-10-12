@@ -10,7 +10,7 @@ import CertificationCard from "@/components/CertificationCard"
 import ContactLink from "@/components/ContactLink"
 
 const FACTS = [
-    ["ROLE", "Frontend Developer / Project Manager"],
+    ["ROLE", "IT Student / PM & Web Development"],
     ["BASE", "Saitama, JP"],
     ["LEARNING", "Since 2018"],
     ["FOCUS", "PM / Web Apps"],
