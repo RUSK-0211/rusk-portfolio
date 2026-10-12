@@ -14,7 +14,7 @@ const FACTS = [
     ["BASE", "Saitama, JP"],
     ["LEARNING", "Since 2018"],
     ["FOCUS", "PM / Web Apps"],
-    ["STATUS", "Open to Opportunities"],
+    ["STATUS", "就職活動中 / 28卒"],
 ] as const
 
 export default function HomeView({ typedText, nav }: { typedText: string; nav: NavFn }) {
