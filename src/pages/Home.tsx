@@ -44,6 +44,7 @@ export default function HomeView({ typedText, nav }: { typedText: string; nav: N
                 <SectionTitle path="~/about" title="About" />
 
                 <div className="about-body">
+                    <h3 className="about-name">工藤 輪乃 （Rino Kudo）</h3>
                     <p className="about-meta">
                         <span>IT系 4年制 専門学校</span>
                         <span className="about-meta-sep" aria-hidden="true">/</span>
