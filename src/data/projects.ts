@@ -44,7 +44,7 @@ export const personalProjects: Project[] = [
         thumb: "OTHELLO",
         thumbVariant: "icon",
         name: "Python Othello",
-        desc: "1年次に制作したPythonのオセロゲームを、現在の知識を活かしてリファクタリングした作品です。",
+        desc: "1年次に制作したPythonのオセロゲームを、3年次に学んだ知識を活かしてリファクタリングした作品です。",
         content: "制作当時の講評を振り返り、盤面表示や操作性を改善するとともに、機能ごとにモジュールを整理しました。また、効果音をゲーム内のイベントに合わせて再設計し、より遊びやすいゲームを目指しました。",
         tags: ["Python", "Refactoring", "CLI"],
         techStack: ["Python", "pygame", "HTML / CSS", "Git / GitHub"],
