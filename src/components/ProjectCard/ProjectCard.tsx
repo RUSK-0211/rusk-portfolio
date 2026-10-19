@@ -92,14 +92,6 @@ export default function ProjectCard({
                     ))}
                 </div>
 
-
-                {/* <div className="project-card-links">
-                    {links.map((l) => (
-                        <a key={l.label} href={l.href} className="project-card-link">
-                            {l.label}
-                        </a>
-                    ))}
-                </div> */}
             </div>
         </div>
     )
