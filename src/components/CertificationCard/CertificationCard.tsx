@@ -23,12 +23,6 @@ export default function CertificationCard({
                     <span>{category}</span>
                 </div>
             </div>
-
-            <div className="cert-status">
-                {status === "passed" && "✓ 合格"}
-                {status === "failed" && "✗ 不合格"}
-                {status === "pending" && "… 受験予定"}
-            </div>
         </div>
     );
 }

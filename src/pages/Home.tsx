@@ -67,7 +67,7 @@ export default function HomeView({ typedText, nav }: { typedText: string; nav: N
             {/* Skills */}
             <section className="section" id="skills">
                 <SectionTitle path="~/skills" title="Skills" />
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 14 }}>
+                <div className="skills-grid">
                     {skillCategories.map((cat) => (
                         <SkillCard key={cat.title} {...cat} />
                     ))}
@@ -108,9 +108,10 @@ export default function HomeView({ typedText, nav }: { typedText: string; nav: N
             </section>
 
             <footer className="footer">
-                <span>© 2026 Rino Kudo — Last Updated: 2026-10-19</span>
-                <span>crafted with React & TypeScript</span>
+                <span>© 2026 Rino Kudo</span>
+                <span>Last Updated: 2026-10-19</span>
             </footer>
+
         </Shell>
     )
 }
