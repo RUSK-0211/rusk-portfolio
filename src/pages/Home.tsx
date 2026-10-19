@@ -9,14 +9,6 @@ import SkillCard from "@/components/SkillCard"
 import CertificationCard from "@/components/CertificationCard"
 import ContactLink from "@/components/ContactLink"
 
-const FACTS = [
-    ["ROLE", "IT Student / PM & Web Development"],
-    ["BASE", "Saitama, JP"],
-    ["LEARNING", "Since 2018"],
-    ["FOCUS", "PM / Web Apps"],
-    ["STATUS", "就職活動中 / 28卒"],
-] as const
-
 export default function HomeView({ typedText, nav }: { typedText: string; nav: NavFn }) {
     return (
         <Shell>
@@ -51,35 +43,25 @@ export default function HomeView({ typedText, nav }: { typedText: string; nav: N
             <section className="section" id="about">
                 <SectionTitle path="~/about" title="About" />
 
-                <div className="about-grid">
-                    <div>
-                        <p className="about-text">
-                            <strong>工藤 輪乃（Rino Kudo）</strong>
-                        </p>
+                <div className="about-body">
+                    <p className="about-meta">
+                        <span>IT系 4年制 専門学校</span>
+                        <span className="about-meta-sep" aria-hidden="true">/</span>
+                        <span>28卒</span>
+                    </p>
 
-                        <p className="about-text">
-                            <strong>2025年</strong>から
-                            Web制作・開発を本格的に始め、現在は専門学校でプロジェクトマネジメントを中心に学んでいます。
-                        </p>
-
-                        <p className="about-text">
-                            学生プロジェクトではPMとして要件整理や進行管理、顧客対応を経験し、改善を重ねながら進める大切さを学びました。
-                            現在はその経験をもとに、PM業務を支援するWebアプリを個人開発しています。
-                            技術だけでなく、利用者やチームとのコミュニケーションを大切にしています。
-                        </p>
-                    </div>
-
-                    <div className="about-facts">
-                        {FACTS.map(([label, value], i) => (
-                            <div key={label} className="about-fact-row">
-                                <span className="about-fact-label">{label}</span>
-                                <span className="about-fact-value">{value}</span>
-                            </div>
-                        ))}
-                    </div>
+                    <p className="about-text">
+                        2018年にITに触れ始め、2025年からWeb制作・開発を本格的に始めました。
+                    </p>
+                    <p className="about-text">
+                        現在は開発だけでなく、チームで成果を生み出すための進め方にも関心を広げ、<strong>プロジェクトマネジメント</strong>を中心に学んでいます。
+                    </p>
+                    <p className="about-text">
+                        参加したプロジェクトでPMを担当し、要件整理や進行管理、顧客対応を経験しました。
+                        試行錯誤を重ねる中で、チームで協力しながらプロジェクトを進めることの難しさと、利用者の声を取り入れながら改善していく大切さを学びました。
+                    </p>
                 </div>
             </section>
-
 
             {/* Skills */}
             <section className="section" id="skills">
