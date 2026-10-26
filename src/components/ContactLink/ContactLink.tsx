@@ -2,7 +2,6 @@ import { useState } from "react"
 import type { Contact } from "@/types"
 
 export default function ContactLink({ contact }: { contact: Contact }) {
-    const [hovered, setHovered] = useState(false)
     const [copied, setCopied] = useState(false)
 
     const handleClick = async (
@@ -24,6 +23,7 @@ export default function ContactLink({ contact }: { contact: Contact }) {
     return (
         <div className="contact-link">
             <a
+                className="contact-link-anchor"
                 href={
                     contact.type === "email"
                         ? `mailto:${contact.value}`
@@ -34,20 +34,9 @@ export default function ContactLink({ contact }: { contact: Contact }) {
                     rel: "noopener noreferrer",
                 })}
                 onClick={handleClick}
-                onMouseEnter={() => setHovered(true)}
-                onMouseLeave={() => setHovered(false)}
-                style={{
-                    color: hovered ? "var(--accent)" : "var(--ink)",
-                    fontFamily: "var(--mono)",
-                    padding: "4px 0",
-                    borderBottom: hovered
-                        ? "1px solid var(--accent)"
-                        : "1px solid transparent",
-                    transition: "color .15s ease, border-color .15s ease",
-                }}
-            >
-                {contact.label}
-            </a>
+                >
+            {contact.label}
+        </a>
 
             {copied && (
                 <div className="toast">
