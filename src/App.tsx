@@ -29,11 +29,13 @@ export default function App() {
     <>
       <Header view={view} nav={nav} />
 
-      {view === "home" ? (
-        <HomeView nav={nav} />
-      ) : (
-        <ProjectsView nav={nav} />
-      )}
+        <main>
+          {view === "home" ? (
+            <HomeView nav={nav} />
+          ) : (
+          <ProjectsView nav={nav} />
+          )}
+        </main>
     </>
   )
 }
