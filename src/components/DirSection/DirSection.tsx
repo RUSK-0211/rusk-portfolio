@@ -4,10 +4,10 @@ import ProjectCard from "@/components/ProjectCard"
 export default function DirSection({ label, desc, cards, bordered }: DirSectionProps) {
     return (
         <div className={`dir-section ${bordered ? "dir-section-bordered" : ""}`}>
-            <div className="dir-label">
+            <h2 className="dir-label">
                 <span className="dir-label-arrow">▸</span>
                 {label}
-            </div>
+            </h2>
 
             <p className="dir-desc">{desc}</p>
 
