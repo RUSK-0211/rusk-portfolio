@@ -148,8 +148,8 @@
     font-family: var(--mono);
     font-size: 16px;
     font-weight: 700;
-    color: var(--ink-soft);
-    margin-bottom: 16px;
+    color: var(--ink);
+    margin-bottom: 20px;
     letter-spacing: 0.02em;
     padding-left: 6px;
     border-left: 2px solid var(--amber-line);
@@ -182,6 +182,7 @@
 }
 
 .skill-bar {
+    margin-bottom: 20px;
     height: 4px;
     background: var(--surface-2);
     border-radius: 2px;
