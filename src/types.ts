@@ -2,6 +2,8 @@ export type View = 'home' | 'projects'
 
 export type NavFn = (view: View, scrollId?: string) => void
 
+export type HomeViewProps = {nav: NavFn}
+
 export type SkillItem = {
     name: string
     level: string

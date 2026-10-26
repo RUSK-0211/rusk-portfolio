@@ -1,5 +1,4 @@
-import type { NavFn } from "@/types"
-
+import type { HomeViewProps } from "@/types"
 import { skillCategories } from "@/data/skills"
 import { certifications } from "@/data/certification"
 import { CONTACT_LINKS } from "@/data/contact"
@@ -9,21 +8,21 @@ import SkillCard from "@/components/SkillCard"
 import CertificationCard from "@/components/CertificationCard"
 import ContactLink from "@/components/ContactLink"
 
-export default function HomeView({ typedText, nav }: { typedText: string; nav: NavFn }) {
+export default function HomeView({nav}: HomeViewProps) {
     return (
         <Shell>
             {/* Hero */}
             <section className="hero">
                 <div className="hero-label">
-                    <span className="hero-label-dot" />
+                    <span className="hero-label-dot"/>
                     IT STUDENT / CURRENTLY LEARNING
                 </div>
 
                 <h1 className="hero-title">Rino Kudo</h1>
 
                 <div className="hero-typed">
-                    {typedText}
-                    <span className="hero-cursor" />
+                    Frontend Developer / Project Manager
+                    <span className="hero-cursor"/>
                 </div>
 
                 <p className="hero-description">
