@@ -231,21 +231,21 @@
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    border: 2px solid var(--amber);
+    border: 2px solid var(--accent-warm);
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--mono);
     font-weight: 700;
     font-size: 14px;
-    color: var(--amber);
+    color: var(--accent-warm);
 }
 
 .cert-seal::after {
     content: "";
     position: absolute;
     inset: 5px;
-    border: 1px dashed var(--amber-line);
+    border: 1px dashed var(--accent-warm);
     border-radius: 50%;
 }
 

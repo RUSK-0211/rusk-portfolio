@@ -9,21 +9,21 @@
   --line-soft: #dad9d3;
 
   --ink: #2a2a27;
-  --ink-soft: #6d6c66;
-  --ink-faint: #9a9990;
+  --ink-soft: #55544f;
+  --ink-faint: #62615b;
 
   /* teal */
-  --accent: #5c6d68;
+  --accent: #4a5a55;
   --accent-soft: #8a9c95;
-  --accent-line: #b7c4be;
+
+  /* terracotta */
+  --accent-warm: #854c3e;
+  --accent-amber: #5A4522;
 
   /* amber */
-  --accent-warm: #a5695a;
-  --accent-warm-soft: #c79a8d;
-  --accent-amber: #5A4522;
-  --amber: #96743a;
+  --amber: #735620;
   --amber-soft: #b8955c;
-  --amber-line: #d4bc96;
+  --amber-line: #cdd496;
 
   /* Font */
   --mono: 'JetBrains Mono', 'Courier New', monospace;
