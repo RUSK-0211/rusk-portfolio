@@ -4,6 +4,7 @@ import OverseasThumb from "@/assets/images/Overseas_thumb.png"
 import DroneImage from "@/assets/images/Drone_thumb.jpg"
 import LiveFxImage from "@/assets/images/LiveFx_thumb.jpg"
 import QuizThumb from "@/assets/images/FE_Speed_Quiz_thumb.png"
+import OthelloThumb from "@/assets/images/othello_image.png"
 
 export const personalProjects: Project[] = [
     {
@@ -42,7 +43,8 @@ export const personalProjects: Project[] = [
     {
         id: "python-othello",
         thumb: "OTHELLO",
-        thumbVariant: "icon",
+        thumbImage: OthelloThumb,
+        thumbVariant: "banner",
         name: "Python Othello",
         desc: "1年次に制作したPythonのオセロゲームを、3年次に学んだ知識を活かしてリファクタリングした作品です。",
         content: "制作当時の講評を振り返り、盤面表示や操作性を改善するとともに、機能ごとにモジュールを整理しました。また、効果音をゲーム内のイベントに合わせて再設計し、より遊びやすいゲームを目指しました。",
