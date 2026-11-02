@@ -9,7 +9,6 @@ export default function SkillCard({ title, items }: SkillCategory) {
                 <div key={item.name} className="skill-item">
                     <div className="skill-item-header">
                         <span className="skill-name">{item.name}</span>
-                        <span className="skill-level">{item.level}</span>
                     </div>
 
                     <div className="skill-bar">

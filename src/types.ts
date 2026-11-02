@@ -6,7 +6,6 @@ export type HomeViewProps = {nav: NavFn}
 
 export type SkillItem = {
     name: string
-    level: string
     pct: number
 }
 

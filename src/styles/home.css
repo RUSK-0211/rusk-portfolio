@@ -136,6 +136,13 @@
     gap: 14px;
 }
 
+.skills-intro {
+    font-family: var(--mono);
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+}
+
 .skill-card {
     border: 1px solid var(--line);
     background: var(--surface);
@@ -173,12 +180,6 @@
 .skill-name {
     font-size: 14px;
     color: var(--ink);
-}
-
-.skill-level {
-    font-family: var(--mono);
-    font-size: 12px;
-    color: var(--ink-faint);
 }
 
 .skill-bar {
@@ -327,6 +328,7 @@
 }
 
 .contact-text {
+    font-family: var(--mono);
     max-width: 500px;
     font-size: 16px;
     color: var(--ink-soft);

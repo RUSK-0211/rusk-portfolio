@@ -66,6 +66,7 @@ export default function HomeView({nav}: HomeViewProps) {
             {/* Skills */}
             <section className="section" id="skills">
                 <SectionTitle path="~/skills" title="Skills" />
+                <p className="skills-intro">※各スキルの習熟度は、学習・制作経験をもとにした自己評価です。</p>
                 <div className="skills-grid">
                     {skillCategories.map((cat) => (
                         <SkillCard key={cat.title} {...cat} />
