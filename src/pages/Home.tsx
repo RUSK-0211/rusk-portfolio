@@ -108,7 +108,7 @@ export default function HomeView({nav}: HomeViewProps) {
 
             <footer className="footer">
                 <span>© 2026 Rino Kudo</span>
-                <span>Last Updated: 2026-10-19</span>
+                <span>Last Updated: 2026-11-02</span>
             </footer>
 
         </Shell>
