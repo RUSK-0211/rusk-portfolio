@@ -40,7 +40,7 @@ export default function HomeView({nav}: HomeViewProps) {
 
             {/* About */}
             <section className="section" id="about">
-                <SectionTitle path="~/about" title="About" />
+                <SectionTitle title="About" />
 
                 <div className="about-body">
                     <h3 className="about-name">工藤 輪乃 （Rino Kudo）</h3>
@@ -65,7 +65,7 @@ export default function HomeView({nav}: HomeViewProps) {
 
             {/* Skills */}
             <section className="section" id="skills">
-                <SectionTitle path="~/skills" title="Skills" />
+                <SectionTitle title="Skills" />
                 <p className="skills-intro">※各スキルの習熟度は、学習・制作経験をもとにした自己評価です。</p>
                 <div className="skills-grid">
                     {skillCategories.map((cat) => (
@@ -76,7 +76,7 @@ export default function HomeView({nav}: HomeViewProps) {
 
             {/* Certifications */}
             <section className="section" id="certifications">
-                <SectionTitle path="~/certifications" title="Certifications" />
+                <SectionTitle title="Certifications" />
 
                 <div className="cert-list">
                     {certifications.map((cert) => (
@@ -87,7 +87,7 @@ export default function HomeView({nav}: HomeViewProps) {
 
             {/* Contact */}
             <section className="section" id="contact">
-                <SectionTitle path="~/contact" title="Contact" />
+                <SectionTitle title="Contact" />
 
                 <div className="contact-layout">
                     <p className="contact-text">

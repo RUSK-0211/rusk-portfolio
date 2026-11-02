@@ -85,12 +85,6 @@ button:focus-visible {
   margin-bottom: 40px;
 }
 
-.section-title-path {
-  font-family: var(--mono);
-  font-size: 12px;
-  color: var(--ink-faint);
-}
-
 .section-title-text {
   font-family: var(--mono);
   font-size: 30px;
