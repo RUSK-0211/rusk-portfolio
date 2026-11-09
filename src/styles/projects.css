@@ -203,7 +203,7 @@
     font-family: var(--mono);
     color: var(--ink);
     font-weight: 700;
-    font-size: 19px;
+    font-size: 22px;
     line-height: 1.35;
     letter-spacing: -0.01em;
 }
@@ -219,7 +219,7 @@
 
 .project-section-body {
     margin: 0 0 5px;
-    font-size: 14.5px;
+    font-size: 16px;
     color: var(--ink-soft);
     line-height: 1.85;
 }
@@ -235,14 +235,14 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--ink-soft);
 }
 
 .project-card-meta strong {
     font-family: var(--mono);
     font-weight: 700;
-    font-size: 11px;
+    font-size: 14px;
     color: var(--ink-faint);
     letter-spacing: 0.02em;
     margin-right: 6px;
@@ -257,7 +257,7 @@
 
 .project-card-tag {
     font-family: var(--mono);
-    font-size: 10px;
+    font-size: 12px;
     color: var(--ink-soft);
     background: var(--surface-2);
     padding: 3px 8px;
@@ -269,7 +269,7 @@
     flex-wrap: wrap;
     gap: 8px;
     font-family: var(--mono);
-    font-size: 11px;
+    font-size: 12px;
     color: var(--ink-faint);
 }
 
@@ -290,17 +290,43 @@
     display: flex;
     gap: 16px;
     font-family: var(--mono);
-    font-size: 11px;
+    font-size: 14px;
     margin-top: 2px;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .project-card-link {
-    color: var(--accent);
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 40px;
+    padding: 0 24px;
+    border: 1px solid var(--amber);
+    border-radius: var(--radius);
+    background: transparent;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    transition:
+        background var(--transition-fast),
+        color var(--transition-fast),
+        transform var(--transition-fast);
+    background: var(--accent-amber);
+    color: var(--surface);
+}
+
+.project-card-link::after {
+    content: "↗";
+    font-size: 12px;
+    transition: transform var(--transition-fast);
 }
 
 .project-card-link:hover {
     text-decoration: underline;
+    background: var(--surface);
+    color: var(--accent-amber);
 }
 
 /* responsive */
