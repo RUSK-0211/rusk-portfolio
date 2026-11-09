@@ -33,8 +33,8 @@ export default function HomeView({nav}: HomeViewProps) {
                 </p>
 
                 <div className="hero-buttons">
-                    <button onClick={() => nav("projects")} className="button">View Projects</button>
-                    <button onClick={() => nav("home", "contact")} className="button">Get in touch</button>
+                    <button onClick={() => nav("projects")} className="button">作品を見る - Projects</button>
+                    <button onClick={() => nav("home", "contact")} className="button">ご連絡 - Contact</button>
                 </div>
             </section>
 

@@ -38,7 +38,7 @@ h1, h2, h3 {
 /* Buttons */
 .button {
   font-family: var(--mono);
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: .04em;
   padding: 12px 20px;
   border-radius: var(--radius);
