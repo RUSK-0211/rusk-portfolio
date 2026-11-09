@@ -227,6 +227,7 @@
 .project-section-body p {
     margin: 0 0 10px;
 }
+
 .project-section-body p:last-child {
     margin-bottom: 0;
 }
@@ -327,6 +328,19 @@
     text-decoration: underline;
     background: var(--surface);
     color: var(--accent-amber);
+}
+
+.project-card-link:hover::after {
+    transform: translate(2px, -2px);
+}
+
+.project-card-link:active {
+    transform: translateY(5px);
+}
+
+.project-card-link:focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 2px;
 }
 
 /* responsive */
