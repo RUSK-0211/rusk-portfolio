@@ -93,7 +93,7 @@ export default function HomeView({nav}: HomeViewProps) {
                     <p className="contact-text">
                         ご覧いただきありがとうございます。
                         <br />
-                        就職活動に関するご連絡や、ポートフォリオや制作物についてのご質問、ご感想などがございましたら、お気軽にご連絡ください。
+                        お気軽にご連絡ください。
                     </p>
 
                     <div className="contact-links">
