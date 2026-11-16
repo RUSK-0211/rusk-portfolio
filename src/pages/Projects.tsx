@@ -26,17 +26,17 @@ export default function ProjectsView({ nav }: { nav: NavFn }) {
             </div>
 
             <DirSection
-                label="/projects/personal"
-                desc="個人制作 — 企画・設計・実装をすべて担当したプロジェクト"
-                cards={personalProjects}
-                bordered
-            />
-
-            <DirSection
                 label="/projects/collaborative"
                 desc="参加プロジェクト — チームの一員として開発に関わったもの"
                 cards={collaborativeProjects}
                 bordered={false}
+            />
+
+            <DirSection
+                label="/projects/personal"
+                desc="個人制作 — 企画・設計・実装をすべて担当したプロジェクト"
+                cards={personalProjects}
+                bordered
             />
         </Shell>
     )
