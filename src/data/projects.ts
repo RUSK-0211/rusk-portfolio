@@ -6,59 +6,6 @@ import LiveFxImage from "@/assets/images/LiveFx_thumb.jpg"
 import QuizThumb from "@/assets/images/FE_Speed_Quiz_thumb.png"
 import OthelloThumb from "@/assets/images/othello_image.png"
 
-export const personalProjects: Project[] = [
-    {
-        id: "overseas-training-site",
-        thumb: "OVERSEAS",
-        thumbImage: OverseasThumb,
-        thumbVariant: "banner",
-        name: "Overseas Training Site",
-        desc: "海外研修で訪れた施設や観光地、学びを紹介するWebサイトです。",
-        content: "報告会で使用するため、短期間で必要な情報を整理し、シンプルで見やすい構成で制作しました。",
-        tags: ["HTML", "CSS", "JavaScript"],
-        techStack: ["HTML", "CSS", "JavaScript", "Git / GitHub"],
-        role: "Frontend",
-        period: "2025年 約1週間",
-        teamSize: 1,
-        links: [
-            { label: "Demo", href: "https://rusk-0211.github.io/overseas-training-site-24010011/" },
-            { label: "Code", href: "https://github.com/RUSK-0211/overseas-training-site-24010011" },
-        ],
-    },
-    {
-        id: "python-othello",
-        thumb: "OTHELLO",
-        thumbImage: OthelloThumb,
-        thumbVariant: "banner",
-        name: "Python Othello",
-        desc: "1年次に制作したPythonのオセロゲームを、3年次に学んだ知識を活かしてリファクタリングした作品です。",
-        content: "制作当時の講評を振り返り、盤面表示や操作性を改善するとともに、機能ごとにモジュールを整理しました。また、効果音をゲーム内のイベントに合わせて再設計し、より遊びやすいゲームを目指しました。",
-        tags: ["Python", "Refactoring", "CLI"],
-        techStack: ["Python", "pygame", "HTML / CSS", "Git / GitHub"],
-        role: "設計 / 実装 / UI改善",
-        period: "2026年 約1週間",
-        teamSize: 1,
-        links: [
-            { label: "Code", href: "https://github.com/RUSK-0211/OthelloGame" }
-        ],
-    },
-    {
-        id: "portfolio-website",
-        thumb: "PORTFOLIO",
-        thumbImage: PortfolioIcon,
-        thumbVariant: "icon",
-        name: "Portfolio Website",
-        desc: "React + TypeScript + Vite で構築した個人ポートフォリオサイトです。",
-        content: "私はデザインに自信が無いため、AIを利用してより良いデザインを追求しました。",
-        tags: ["React", "TypeScript", "Vite"],
-        techStack: ["React", "TypeScript", "Vite", "Git / GitHub"],
-        role: "Frontend / UI設計",
-        period: "2026年 約3週間",
-        teamSize: 1,
-        links: [{ label: "Code", href: "https://github.com/RUSK-0211/rusk-portfolio" }],
-    },
-]
-
 export const collaborativeProjects: Project[] = [
     {
         id: "shift-app",
@@ -121,5 +68,58 @@ export const collaborativeProjects: Project[] = [
         period: "2025.12 - 2026.01（約2ヶ月間）",
         teamSize: 6,
         links: [{ label: "Code", href: "https://github.com/shogo-snsw/fe-speed-quiz" }],
+    },
+]
+
+export const personalProjects: Project[] = [
+    {
+        id: "overseas-training-site",
+        thumb: "OVERSEAS",
+        thumbImage: OverseasThumb,
+        thumbVariant: "banner",
+        name: "Overseas Training Site",
+        desc: "海外研修で訪れた施設や観光地、学びを紹介するWebサイトです。",
+        content: "報告会で使用するため、短期間で必要な情報を整理し、シンプルで見やすい構成で制作しました。",
+        tags: ["HTML", "CSS", "JavaScript"],
+        techStack: ["HTML", "CSS", "JavaScript", "Git / GitHub"],
+        role: "Frontend",
+        period: "2025年 約1週間",
+        teamSize: 1,
+        links: [
+            { label: "Demo", href: "https://rusk-0211.github.io/overseas-training-site-24010011/" },
+            { label: "Code", href: "https://github.com/RUSK-0211/overseas-training-site-24010011" },
+        ],
+    },
+    {
+        id: "python-othello",
+        thumb: "OTHELLO",
+        thumbImage: OthelloThumb,
+        thumbVariant: "banner",
+        name: "Python Othello",
+        desc: "1年次に制作したPythonのオセロゲームを、3年次に学んだ知識を活かしてリファクタリングした作品です。",
+        content: "制作当時の講評を振り返り、盤面表示や操作性を改善するとともに、機能ごとにモジュールを整理しました。また、効果音をゲーム内のイベントに合わせて再設計し、より遊びやすいゲームを目指しました。",
+        tags: ["Python", "Refactoring", "CLI"],
+        techStack: ["Python", "pygame", "HTML / CSS", "Git / GitHub"],
+        role: "設計 / 実装 / UI改善",
+        period: "2026年 約1週間",
+        teamSize: 1,
+        links: [
+            { label: "Code", href: "https://github.com/RUSK-0211/OthelloGame" }
+        ],
+    },
+    {
+        id: "portfolio-website",
+        thumb: "PORTFOLIO",
+        thumbImage: PortfolioIcon,
+        thumbVariant: "icon",
+        name: "Portfolio Website",
+        desc: "React + TypeScript + Vite で構築した個人ポートフォリオサイトです。",
+        content: "私はデザインに自信が無いため、AIを利用してより良いデザインを追求しました。",
+        tags: ["React", "TypeScript", "Vite"],
+        techStack: ["React", "TypeScript", "Vite", "Git / GitHub"],
+        role: "Frontend / UI設計",
+        period: "2026年 約3週間",
+        teamSize: 1,
+        links: [{ label: "Code", href: "https://github.com/RUSK-0211/rusk-portfolio" }],
     },
 ]
