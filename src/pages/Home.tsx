@@ -21,20 +21,17 @@ export default function HomeView({nav}: HomeViewProps) {
                 <h1 className="hero-title">Rino Kudo</h1>
 
                 <div className="hero-typed">
-                    Frontend Developer / Project Manager
+                    プロジェクトマネジメント について勉強中...
                     <span className="hero-cursor"/>
                 </div>
 
                 <p className="hero-description">
-                    私は「ユーザーにとって価値のあるプロダクトを届けること」を軸に、プロジェクトマネジメントとフロントエンドの両面から、ものづくりについて学んでいます。
-                </p>
-                <p className="hero-description">
-                    アイデアを形にしていく過程が好きで、技術だけでなく企画や設計、進め方まで含めてプロダクトを考えることを大切にしています。
+                    私は「ユーザーにとって価値のあるプロダクトを届けること」を軸に、プロジェクトマネジメントの視点から、ものづくりについて学んでいます。
                 </p>
 
                 <div className="hero-buttons">
-                    <button onClick={() => nav("projects")} className="button">作品を見る - Projects</button>
-                    <button onClick={() => nav("home", "contact")} className="button">ご連絡 - Contact</button>
+                    <button onClick={() => nav("projects")} className="button">作品を見る</button>
+                    <button onClick={() => nav("home", "contact")} className="button">ご連絡</button>
                 </div>
             </section>
 
@@ -51,14 +48,14 @@ export default function HomeView({nav}: HomeViewProps) {
                     </p>
 
                     <p className="about-text">
-                        2018年にITに触れ始め、2025年からWeb制作・開発を本格的に始めました。
+                        学内で参加したプロジェクトで、9人チームのPMとしてシフト管理システムを開発・提案しました。
                     </p>
                     <p className="about-text">
-                        現在は開発だけでなく、チームで成果を生み出すための進め方にも関心を広げ、<strong>プロジェクトマネジメント</strong>を中心に学んでいます。
+                        お客様へのヒアリングを通じて要望や運用上の課題を整理し、要件の検討、タスク分担、進捗管理、定期的な打ち合わせの進行などを行いました。
+                        また、メンバー間で意見や認識が異なる場面では、議論を整理しながらチームとして前に進めることを意識しました。
                     </p>
                     <p className="about-text">
-                        参加したプロジェクトでPMを担当し、要件整理や進行管理、顧客対応を経験しました。
-                        試行錯誤を重ねる中で、チームで協力しながらプロジェクトを進めることの難しさと、利用者の声を取り入れながら改善していく大切さを学びました。
+                        この経験から、利用者の要望をそのまま形にするのではなく、背景にある課題や実際の運用を理解したうえで、チームと協力して解決策を考えることを大切にしています。
                     </p>
                 </div>
             </section>
@@ -109,7 +106,7 @@ export default function HomeView({nav}: HomeViewProps) {
 
             <footer className="footer">
                 <span>© 2026 Rino Kudo</span>
-                <span>Last Updated: 2026-11-02</span>
+                <span>Last Updated: 2026-11-16</span>
             </footer>
 
         </Shell>
