@@ -8,21 +8,6 @@ import OthelloThumb from "@/assets/images/othello_image.png"
 
 export const personalProjects: Project[] = [
     {
-        id: "portfolio-website",
-        thumb: "PORTFOLIO",
-        thumbImage: PortfolioIcon,
-        thumbVariant: "icon",
-        name: "Portfolio Website",
-        desc: "React + TypeScript + Vite で構築した個人ポートフォリオサイトです。",
-        content: "私はデザインに自信が無いため、AIを利用してより良いデザインを追求しました。",
-        tags: ["React", "TypeScript", "Vite"],
-        techStack: ["React", "TypeScript", "Vite", "Git / GitHub"],
-        role: "Frontend / UI設計",
-        period: "2026年 約3週間",
-        teamSize: 1,
-        links: [{ label: "Code", href: "https://github.com/RUSK-0211/rusk-portfolio" }],
-    },
-    {
         id: "overseas-training-site",
         thumb: "OVERSEAS",
         thumbImage: OverseasThumb,
@@ -56,11 +41,39 @@ export const personalProjects: Project[] = [
         links: [
             { label: "Code", href: "https://github.com/RUSK-0211/OthelloGame" }
         ],
-    }
-
+    },
+    {
+        id: "portfolio-website",
+        thumb: "PORTFOLIO",
+        thumbImage: PortfolioIcon,
+        thumbVariant: "icon",
+        name: "Portfolio Website",
+        desc: "React + TypeScript + Vite で構築した個人ポートフォリオサイトです。",
+        content: "私はデザインに自信が無いため、AIを利用してより良いデザインを追求しました。",
+        tags: ["React", "TypeScript", "Vite"],
+        techStack: ["React", "TypeScript", "Vite", "Git / GitHub"],
+        role: "Frontend / UI設計",
+        period: "2026年 約3週間",
+        teamSize: 1,
+        links: [{ label: "Code", href: "https://github.com/RUSK-0211/rusk-portfolio" }],
+    },
 ]
 
 export const collaborativeProjects: Project[] = [
+    {
+        id: "shift-app",
+        thumb: "SHIFT",
+        thumbVariant: "icon",
+        name: "保育園シフト希望管理システム",
+        desc: "保育園職員の出勤希望・休暇申請を効率的に管理するための Google Apps Script ベースの Web アプリです。",
+        content: "園長・職員へのヒアリングをもとに要件を整理し、希望ログ、カレンダー生成、認証、管理メニューなどの機能を設計しました。私はPMとして約1年間、9名チームの進行管理を担当しました。",
+        tags: ["Google Apps Script", "JavaScript", "HTML", "CSS", "clasp"],
+        techStack: ["Google Apps Script (GAS)", "JavaScript", "HTML / CSS", "Google スプレッドシート API", "clasp", "Node.js（開発環境）", "Git / GitHub"],
+        role: "PM",
+        period: "2025.07 - 2026.06（約1年間）",
+        teamSize: 9,
+        links: [{ label: "Code", href: "https://github.com/SIW-ShiftSystem/shift-app-public" }],
+    },
     {
         id: "drone",
         thumb: "DRONE",
@@ -93,20 +106,6 @@ export const collaborativeProjects: Project[] = [
         period: "2025.12 - 2026.04（約2ヶ月間）",
         teamSize: 11,
         links: [{ label: "Code", href: "https://github.com/SIWLiveFX/LiveFx" }],
-    },
-    {
-        id: "shift-app",
-        thumb: "SHIFT",
-        thumbVariant: "icon",
-        name: "保育園シフト希望管理システム",
-        desc: "保育園職員の出勤希望・休暇申請を効率的に管理するための Google Apps Script ベースの Web アプリです。",
-        content: "園長・職員へのヒアリングをもとに要件を整理し、希望ログ、カレンダー生成、認証、管理メニューなどの機能を設計しました。私はPMとして約1年間、9名チームの進行管理を担当しました。",
-        tags: ["Google Apps Script", "JavaScript", "HTML", "CSS", "clasp"],
-        techStack: ["Google Apps Script (GAS)", "JavaScript", "HTML / CSS", "Google スプレッドシート API", "clasp", "Node.js（開発環境）", "Git / GitHub"],
-        role: "PM",
-        period: "2025.07 - 2026.06（約1年間）",
-        teamSize: 9,
-        links: [{ label: "Code", href: "https://github.com/SIW-ShiftSystem/shift-app-public" }],
     },
     {
         id: "fe-speed-quiz",
